@@ -70,13 +70,23 @@ class Student(Shaxs):
             return sum(self.baholar)
 
 
+        def get_age(self, h_yil):
+            return f"{self.name.title()} yoshi {h_yil-self.b_year} da"
+
+
+        def get_passport(self):
+            return f"{self.name.title()} ning passport raqami: {self.passport}"
+
+
 
 student1 = Student("Abdulahad", "Ubaydullayev", "Iskandar", 2009, "AH1441224", "O'zbek", "BM", 9, [56,65,43,65])
 
 print(student1.get_age(2025))
 
-print(student1.get_info())
-
 print(student1.get_passport())
 
-print(student1.set_sinf())
+# print(student1.get_info())
+
+# print(student1.set_sinf())
+
+
