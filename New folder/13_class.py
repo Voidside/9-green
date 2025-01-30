@@ -81,12 +81,57 @@ class Student(Shaxs):
 
 student1 = Student("Abdulahad", "Ubaydullayev", "Iskandar", 2009, "AH1441224", "O'zbek", "BM", 9, [56,65,43,65])
 
-print(student1.get_age(2025))
+# print(student1.get_age(2025))
 
-print(student1.get_passport())
+# print(student1.get_passport())
 
 # print(student1.get_info())
 
 # print(student1.set_sinf())
 
 
+
+
+class Technic():
+    def __init__(self, company: str, OS: str, year: int):
+        self.company = company
+        self.OS = OS
+        self.year = year
+
+
+    def get_info(self):
+        """ Umumiy ma'lumot """
+        return f"Kompaniya: {self.company} \nOS: {self.OS} \nYil: {self.year}"
+
+
+
+all = Technic("Apple", "IOS", 2024)
+
+class Laptop(Technic):
+    def __init__(self, company: str, OS: str, year: int, model: str, price: int, screen: str):
+        super().__init__(company, OS, year)
+        self.model = model
+        self.price = price
+        self.screen = screen
+
+
+    def get_info(self):
+        """ Umumiy ma'lumot """
+        return f"Kompaniya: {self.company} \nOS: {self.OS} \nYil: {self.year} \nModel: {self.model} \nNarxi: {self.price} \nEkran: {self.screen}"
+
+
+
+
+note = Laptop("Apple", "IOSX", 2025, "MacBook Air  M1", 1400, "4K")
+
+print(note.get_info())
+
+
+class Phone(Technic):
+    def __init__(self, company: str, OS: str, year: int, model: str, price: int, camera: str):
+        super().__init__(company, OS, year)
+        self.model = model
+        self.price = price
+        self.camera = camera
+
+        
