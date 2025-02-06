@@ -84,3 +84,13 @@ t_kun = 30
 t_sana = datetime.date(t_yil, t_oy, t_kun)
 
 # bugun = datetime.
+
+
+bugun1 =    datetime.datetime.now()
+
+
+print(f"Bugun sana va vaqt:{bugun1.day} soat{bugun1.hour}:{bugun1.minute}")
+
+print(f"Bugun sana: {bugun1.day}")
+
+print(f"Bugun vaqt: {bugun1.hour}:{bugun1.minute}")
