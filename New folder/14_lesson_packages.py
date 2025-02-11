@@ -94,3 +94,18 @@ print(f"Bugun sana va vaqt:{bugun1.day} soat{bugun1.hour}:{bugun1.minute}")
 print(f"Bugun sana: {bugun1.day}")
 
 print(f"Bugun vaqt: {bugun1.hour}:{bugun1.minute}")
+
+
+
+
+year = int(input("Type in year: "))
+month = int(input("Type in month: "))
+day = int(input("Type in day: "))
+
+date = datetime.datetime(year, month, day)
+
+if date.year < bugun.year or date.month < bugun.month:
+    print("!")
+else:
+    result = date-bugun
+    print(f"")
