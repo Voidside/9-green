@@ -112,15 +112,26 @@ link -> https://www.w3schools.com/python/python_datetime.asp
 
 
 
-today = datetime.datetime.now()
+
+today = datetime.date.today()
+
+# b_month = int(input("Type in birth month"))
+# b_day = int(input("Type in birth day"))
+
+# date = datetime.date(today.year, b_month, b_day)
+# date1 = datetime.date(today.year+1, b_month, b_day)
+
+# if date > today:
+#     print(f"Days left: {(date-today).days}")
+# elif date < today:
+#     print(f"Days left: {(date1-today).days}")
+# else:
+#     print(f"Happy birthday!")
 
 
+today = datetime.date.today()
+day = int(input("Type in days: "))
 
-b_year = 2009
-b_month = 12
-b_day = 30
+date = today + datetime.timedelta(days=day)
 
-b_date = datetime.date(b_month, b_month, b_day)
-
-if b_date.month < today.month:
-    pass
+print(f"After {day} days date will be: {date.day}-{date.strftime("%B")} {date.year}-year. Weekday: {date.strftime("%A")}")

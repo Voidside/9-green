@@ -45,36 +45,36 @@ def max():
 # print(print.__doc__)
 
 """ Parametrni key_word bilan berish """
-# def yosh_top(t_yil):
-#     """ Tug'ilgan yil olib yoshni chiqaruvchi funksiya
+def yosh_top(t_yil):
+    """ Tug'ilgan yil olib yoshni chiqaruvchi funksiya
 
-#     t_yil --> int
-#     """
-#     print(f"Siz  {2024-t_yil} yosdasiz")
+    t_yil --> int
+    """
+    print(f"Siz  {2024-t_yil} yosdasiz")
 
-# yosh_top(t_yil=2012)
+yosh_top(t_yil=2012)
 
 
 """ Standart qiymat"""
-# def yosh_top(t_yil=2000):
-#     """ Tug'ilgan yil olib yoshni chiqaruvchi funksiya
+def yosh_top(t_yil=2000):
+    """ Tug'ilgan yil olib yoshni chiqaruvchi funksiya
 
-#     t_yil --> int
-#     """
-#     print(f"Siz  {2024-t_yil} yosdasiz")
+    t_yil --> int
+    """
+    print(f"Siz  {2024-t_yil} yosdasiz")
 
-# yosh_top(t_yil=2012)
+yosh_top(t_yil=2012)
 
 
 
 
 """ 9B010 """
 """ 1 """
-# print(len.__doc__)
-# print(max.__doc__)
-# print(sum.__doc__)
-# print(range.__doc__)
-# print(list.__doc__)
+print(len.__doc__)
+print(max.__doc__)
+print(sum.__doc__)
+print(range.__doc__)
+print(list.__doc__)
 
 
 """ 2 """
@@ -343,22 +343,22 @@ def mid_arif(*sonlar: int):
         s = s + son
     return s/lenn(sonlar)
 
-# print(mid_arif(4,4,4,4))
+print(mid_arif(4,4,4,4))
 
-# import math
+import math
 
-# ekub = math.gcd(100)
-# print(ekub)
-
-
+ekub = math.gcd(100)
+print(ekub)
 
 
-# from random import randrange
 
-# r = randrange(1,10)
 
-# son = int(input("Son kiriting: "))
-# if son == r:
-#     print("To'g'ri topdingiz!")
-# else:
-#     print(f"PC {r} sonini oylagan edi")
+from random import randrange
+
+r = randrange(1,10)
+
+son = int(input("Son kiriting: "))
+if son == r:
+    print("To'g'ri topdingiz!")
+else:
+    print(f"PC {r} sonini oylagan edi")
