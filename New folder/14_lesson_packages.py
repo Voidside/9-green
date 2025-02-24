@@ -198,17 +198,30 @@ link -> https://www.w3schools.com/python/python_regex.asp
 
 
 """ 1 """
-word = "python aaaaa  bbbb ddddd"
-word_pattern = r'\b[a-z]{5}\b'
+# word = "python aaaaa  bbbb ddddd"
+# word_pattern = r'\b[a-z]{5}\b'
 
-print(re.findall(word_pattern, word))
+# print(re.findall(word_pattern, word))
 
 
 
 """ 2 """
-date_pattern = r"[0-9]{4}[-][0-9]{2}[-][0-9]{2}"
-stt = """2025-02-20 2009-12-30"""
-print(re.findall(date_pattern, stt))
+# date_pattern = r"[0-9]{4}[-][0-9]{2}[-][0-9]{2}"
+# stt = """2025-02-20 2009-12-30"""
+# print(re.findall(date_pattern, stt))
 
 
-""" 3 """
+
+
+
+""" RE EXAM """
+""" 4 """
+# date = '^[0-9]{2}[/][0-9]{2}[/][0-9]{4}[/]'
+# dt = "23/05/2025"
+# print(re.findall(date, dt))
+
+
+""" 5 """
+num = "998(77)117-00-73 , +998(77)117-00-73 , "
+ph_n_pattern = "^[\+]?998[(]?[0-9]{2}[)][0-9]{3}[-\s\.][0-9]{2}[-\s\.][0-9]{2}"
+print(re.findall("^[\+]?998[(]?[0-9]{2}[)][0-9]{3}[-\s\.][0-9]{2}[-\s\.][0-9]{2}", num))
