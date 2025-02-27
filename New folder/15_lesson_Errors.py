@@ -31,22 +31,31 @@ def cal():
     """ """
     while True:
             try:
-                num1 = int(input("Son kiriting: "))
-                sign = input("Amal kiriting: ")
-                num2 = int(input("Son kiriting: "))
+                num1 = input("Son kiriting(Chiqish uchun 'exit'): ")
+                if num1 == "exit":
+                    break
+                sign = input("Amal kiriting(Chiqish uchun 'exit'): ")
+                if num1 == "exit":
+                    break
+                num2 = input("Son kiriting(Chiqish uchun 'exit'): ")
+                if num1 == "exit":
+                    break
             except ValueError:
-                 return f"Siz faqat son kiritishingiz mumkin!"
-            if sign == "+":
-                return f"{num1+num2}"
-            elif sign == "-":
-                return f"{num1-num2}"
-            elif sign == "*":
-                return f"{num1*num2}"
-            elif sign == ":":
-                try:
-                    return f"{num1/num2}"
-                except ZeroDivisionError:
-                     return f"Sonni nolga bolish mumkin emas!"
+                 print(f"Siz faqat son kiritishingiz mumkin!")
+            if num2.isdigit():
+                if sign == "+":
+                    print(f"{int(num1+num2)}")
+                elif sign == "-":
+                    print(f"{int(num1-num2)}")
+                elif sign == "*":
+                    print(f"{int(num1*num2)}")
+                elif sign == ":":
+                    try:
+                        print(f"{int(num1/num2)}")
+                    except ZeroDivisionError:
+                        print(f"Sonni nolga bolish mumkin emas!")
+                else:
+                    print(f"Value error")
             
             
 
