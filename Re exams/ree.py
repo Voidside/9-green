@@ -35,15 +35,15 @@ elif today1 < date1:
 
 
 """ 5 """
-today2 = datetime.date.today()
+# today2 = datetime.date.today()
 
-oy = int(input("Tug'ilgan oyingizni kiriting: "))
-kun = int(input("Tug'ilgan kuningizni kiriting: "))
+# oy = int(input("Tug'ilgan oyingizni kiriting: "))
+# kun = int(input("Tug'ilgan kuningizni kiriting: "))
 
-date1 = datetime.date(today2.year, oy, kun)
-date2 = datetime.date(today2.year+1, oy, kun)
+# date1 = datetime.date(today2.year, oy, kun)
+# date2 = datetime.date(today2.year+1, oy, kun)
 
-if today2 > date1:
-    print(f"Sizning tug'ilgan kuningizga {(date2-today2).days} kun qoldi.")
-elif today2 < date1:
-    print(f"Sizning tug'ilgan kuningizga {(date1-today2).days} kun qoldi.")
+# if today2 > date1:
+#     print(f"Sizning tug'ilgan kuningizga {(date2-today2).days} kun qoldi.")
+# elif today2 < date1:
+#     print(f"Sizning tug'ilgan kuningizga {(date1-today2).days} kun qoldi.")
