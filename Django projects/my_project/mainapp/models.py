@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class Chek_in(models.Model):
+class Check_in(models.Model):
     """ """
 
     full_name = models.CharField(max_length=100)
